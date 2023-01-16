@@ -70,7 +70,7 @@ export const Post = ({
             {isFullPost ? title : <Link to={`/posts/${id}`}>{title}</Link>}
           </h2>
           <ul className={styles.tags}>
-            {tags.map((name) => (
+            {tags?.map((name) => (
               <li key={name}>
                 <Link to={`/tags/${name}`}>#{name}</Link>
               </li>
@@ -84,7 +84,7 @@ export const Post = ({
             </li>
             <li>
               <CommentIcon />
-              <span>{commentsCount}</span>
+              <span>{commentsCount.length}</span>
             </li>
           </ul>
         </div>

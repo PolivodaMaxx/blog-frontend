@@ -3,7 +3,7 @@ import styles from './UserInfo.module.scss';
 import userAvatar from './user.png';
 
 export const UserInfo = ({ avatarUrl, fullName, additionalText }) => {
-  console.log(additionalText);
+  // console.log(additionalText);
   return (
     <div className={styles.root}>
       <img
